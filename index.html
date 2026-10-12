@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Relay · REST Client</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <h1>Relay<small>Send a request, inspect the response.</small></h1>
+      <button class="icon-btn" id="theme" aria-label="Toggle theme">
+        <svg width="18px" height="18px" version="1.1" id="Layer_1" x="0px" y="0px" xml:space="preserve"
+          viewBox="0 0 716.53997 716.53997" width="716.99261" height="716.99261" xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg">
+          <g transform="translate(-3163.975,-113.745)">
+            <defs id="defs32" /><!-- Free icon from infyicon.com | License: https://infyicon.com/license -->
+            <g id="infy-icon" transform="translate(-27.984991,-27.985011)">
+              <style type="text/css" id="style2">
+                .st0 {
+                  fill: none;
+                  stroke: #424244;
+                  stroke-width: 24.0191;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                  fill: none;
+                  stroke: #5599FE;
+                  stroke-width: 24.0191;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                }
+
+                .st2 {
+                  fill: #424244;
+                }
+
+                .st3 {
+                  fill: #FFFFFF;
+                }
+
+                .st4 {
+                  fill: #5599FE;
+                }
+              </style>
+              <g id="g26">
+                <circle class="st4" cx="3550.23" cy="500" r="358.26999" id="circle4" />
+                <g id="g24">
+                  <path class="st3"
+                    d="m 3769.34,490.6 h -74.66 c -2.06,0 -3.95,0.67 -5.5,1.79 -1.76,-32.7 -14.81,-62.39 -35.32,-85.26 1.89,-0.3 3.7,-1.17 5.16,-2.63 l 52.8,-52.8 c 3.67,-3.67 3.67,-9.62 0,-13.29 -3.67,-3.67 -9.62,-3.67 -13.29,0 l -52.8,52.8 c -1.46,1.46 -2.32,3.27 -2.62,5.16 -22.87,-20.51 -52.56,-33.56 -85.26,-35.32 1.12,-1.55 1.79,-3.44 1.79,-5.5 v -74.66 c 0,-5.19 -4.21,-9.4 -9.4,-9.4 -5.19,0 -9.4,4.21 -9.4,9.4 v 74.66 c 0,2.06 0.67,3.95 1.79,5.5 -32.7,1.76 -62.39,14.81 -85.26,35.32 -0.3,-1.89 -1.17,-3.7 -2.62,-5.16 l -52.8,-52.8 c -3.67,-3.67 -9.62,-3.67 -13.29,0 -3.67,3.67 -3.67,9.62 0,13.29 l 52.8,52.8 c 1.46,1.46 3.27,2.32 5.16,2.63 -20.51,22.87 -33.56,52.56 -35.32,85.26 -1.55,-1.12 -3.44,-1.79 -5.5,-1.79 h -74.66 c -5.19,0 -9.4,4.21 -9.4,9.4 0,5.19 4.21,9.4 9.4,9.4 h 74.66 c 2.06,0 3.95,-0.67 5.5,-1.79 1.76,32.7 14.81,62.39 35.32,85.26 -1.89,0.3 -3.71,1.17 -5.16,2.62 l -52.8,52.8 c -3.67,3.67 -3.67,9.62 0,13.29 1.83,1.83 4.24,2.75 6.65,2.75 2.4,0 4.81,-0.92 6.65,-2.75 l 52.8,-52.8 c 1.46,-1.46 2.32,-3.27 2.62,-5.16 22.87,20.51 52.56,33.56 85.26,35.32 -1.12,1.55 -1.79,3.44 -1.79,5.5 v 74.66 c 0,5.19 4.21,9.4 9.4,9.4 5.19,0 9.4,-4.21 9.4,-9.4 v -74.66 c 0,-2.06 -0.67,-3.95 -1.79,-5.5 32.7,-1.76 62.39,-14.81 85.26,-35.32 0.3,1.89 1.17,3.7 2.62,5.16 l 52.8,52.8 c 1.84,1.83 4.24,2.75 6.65,2.75 2.41,0 4.81,-0.92 6.65,-2.75 3.67,-3.67 3.67,-9.62 0,-13.29 l -52.8,-52.8 c -1.46,-1.46 -3.27,-2.32 -5.16,-2.62 20.51,-22.87 33.56,-52.56 35.32,-85.26 1.55,1.12 3.44,1.79 5.5,1.79 h 74.66 c 5.19,0 9.4,-4.21 9.4,-9.4 -0.02,-5.19 -4.23,-9.4 -9.42,-9.4 z"
+                    id="path6" />
+                  <path class="st3"
+                    d="m 3481.44,359.79 c 1.65,3.27 4.96,5.16 8.4,5.16 1.42,0 2.87,-0.33 4.23,-1.01 4.63,-2.34 6.49,-7.99 4.15,-12.63 l -18.76,-37.14 c -2.34,-4.63 -7.99,-6.49 -12.63,-4.15 -4.63,2.34 -6.49,7.99 -4.15,12.63 z"
+                    id="path8" />
+                  <path class="st3"
+                    d="m 3362.91,436.5 39.53,13 c 0.97,0.32 1.96,0.47 2.94,0.47 3.95,0 7.63,-2.51 8.93,-6.46 1.62,-4.93 -1.06,-10.24 -5.99,-11.86 l -39.53,-13 c -4.93,-1.62 -10.24,1.06 -11.86,5.99 -1.63,4.93 1.05,10.24 5.98,11.86 z"
+                    id="path10" />
+                  <path class="st3"
+                    d="m 3414.17,556.17 c -2.34,-4.63 -7.99,-6.49 -12.63,-4.15 l -37.14,18.76 c -4.63,2.34 -6.49,7.99 -4.15,12.63 1.65,3.27 4.96,5.16 8.4,5.16 1.42,0 2.87,-0.32 4.23,-1.01 l 37.14,-18.76 c 4.63,-2.35 6.49,-8 4.15,-12.63 z"
+                    id="path12" />
+                  <path class="st3"
+                    d="m 3493.74,635.93 c -4.93,-1.62 -10.24,1.06 -11.86,5.99 l -13,39.53 c -1.62,4.93 1.06,10.24 5.99,11.86 0.97,0.32 1.96,0.47 2.94,0.47 3.95,0 7.63,-2.51 8.93,-6.46 l 13,-39.53 c 1.61,-4.93 -1.07,-10.24 -6,-11.86 z"
+                    id="path14" />
+                  <path class="st3"
+                    d="m 3619.03,640.21 c -2.34,-4.63 -7.99,-6.49 -12.63,-4.15 -4.63,2.34 -6.49,7.99 -4.15,12.63 l 18.76,37.14 c 1.65,3.27 4.96,5.16 8.4,5.16 1.42,0 2.87,-0.32 4.23,-1.01 4.63,-2.34 6.49,-7.99 4.15,-12.63 z"
+                    id="path16" />
+                  <path class="st3"
+                    d="m 3737.55,563.5 -39.53,-13 c -4.93,-1.62 -10.24,1.06 -11.86,5.99 -1.62,4.93 1.06,10.24 5.99,11.86 l 39.53,13 c 0.98,0.32 1.96,0.47 2.94,0.47 3.95,0 7.63,-2.51 8.93,-6.46 1.61,-4.93 -1.07,-10.24 -6,-11.86 z"
+                    id="path18" />
+                  <path class="st3"
+                    d="m 3686.29,443.83 c 1.65,3.27 4.96,5.16 8.4,5.16 1.42,0 2.87,-0.33 4.23,-1.01 l 37.14,-18.76 c 4.63,-2.34 6.49,-7.99 4.15,-12.63 -2.34,-4.64 -7.99,-6.49 -12.63,-4.15 l -37.14,18.76 c -4.63,2.34 -6.49,8 -4.15,12.63 z"
+                    id="path20" />
+                  <path class="st3"
+                    d="m 3606.72,364.07 c 0.97,0.32 1.96,0.47 2.94,0.47 3.95,0 7.63,-2.51 8.93,-6.46 l 13,-39.53 c 1.62,-4.93 -1.06,-10.24 -5.99,-11.86 -4.93,-1.62 -10.24,1.06 -11.86,5.99 l -13,39.53 c -1.63,4.93 1.05,10.24 5.98,11.86 z"
+                    id="path22" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+
+      </button>
+    </header>
+
+    <form class="card wide urlbar" id="form" autocomplete="off">
+      <div class="row" style="display:contents">
+        <select id="method" aria-label="HTTP method">
+          <option>GET</option>
+          <option>POST</option>
+          <option>PUT</option>
+          <option>PATCH</option>
+          <option>DELETE</option>
+          <option>HEAD</option>
+          <option>OPTIONS</option>
+        </select>
+        <input type="text" id="url" inputmode="url" placeholder="https://api.example.com/v1/users"
+          aria-label="Request URL" value="https://jsonplaceholder.typicode.com/posts">
+        <button class="send" id="send" type="submit">Send</button>
+      </div>
+    </form>
+
+    <section class="card" aria-label="Request">
+      <div class="tabs" role="tablist" id="reqTabs">
+        <button class="tab" role="tab" aria-selected="true" data-p="params">Params<span class="n"
+            id="n-params">0</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-p="auth">Auth</button>
+        <button class="tab" role="tab" aria-selected="false" data-p="headers">Headers<span class="n"
+            id="n-headers">0</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-p="body">Body</button>
+      </div>
+
+      <div class="panel on" id="p-params">
+        <div class="kv" id="kv-params"></div>
+        <button type="button" class="add" data-add="params">+ Add query parameter</button>
+      </div>
+
+      <div class="panel" id="p-auth">
+        <div class="field"><label for="authType">Type</label>
+          <select id="authType" style="width:100%;font-family:var(--sans);font-size:16px;font-weight:500">
+            <option value="none">No auth</option>
+            <option value="bearer">Bearer token</option>
+            <option value="basic">Basic auth</option>
+            <option value="apikey">API key</option>
+          </select>
+        </div>
+        <div id="authFields"></div>
+      </div>
+
+      <div class="panel" id="p-headers">
+        <div class="kv" id="kv-headers"></div>
+        <button type="button" class="add" data-add="headers">+ Add header</button>
+      </div>
+
+      <div class="panel" id="p-body">
+        <div class="seg" id="bodyType" role="group" aria-label="Body type">
+          <button type="button" data-t="none" aria-pressed="true">None</button>
+          <button type="button" data-t="json" aria-pressed="false">JSON</button>
+          <button type="button" data-t="form" aria-pressed="false">Form data</button>
+          <button type="button" data-t="urlenc" aria-pressed="false">URL-encoded</button>
+          <button type="button" data-t="raw" aria-pressed="false">Raw</button>
+        </div>
+        <div id="b-none" class="hint">This request has no body.</div>
+        <div id="b-json" hidden>
+          <textarea id="json" spellcheck="false" placeholder='{"title":"Hello","userId":1}'
+            aria-label="JSON body"></textarea>
+          <div class="tools"><button type="button" class="ghost" id="fmt">Format</button><button type="button"
+              class="ghost" id="min">Minify</button><span class="err-text" id="jerr"></span></div>
+        </div>
+        <div id="b-form" hidden>
+          <div class="kv" id="kv-form"></div>
+          <button type="button" class="add" data-add="form">+ Add field</button>
+          <p class="hint">Sent as multipart/form-data. Choose "File" on a row to attach a file.</p>
+        </div>
+        <div id="b-urlenc" hidden>
+          <div class="kv" id="kv-urlenc"></div>
+          <button type="button" class="add" data-add="urlenc">+ Add field</button>
+        </div>
+        <div id="b-raw" hidden>
+          <textarea id="raw" spellcheck="false" placeholder="Plain text, XML, GraphQL…"
+            aria-label="Raw body"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-label="Response" id="resCard">
+      <div id="resEmpty" class="empty"><b>No response yet</b>Press Send to see status, headers and body here.</div>
+      <div id="resBox" hidden>
+        <div class="statusbar">
+          <span class="badge" id="rStatus"></span>
+          <span class="meta" id="rTime"></span><span class="meta" id="rSize"></span>
+        </div>
+        <div class="tabs" role="tablist" id="resTabs">
+          <button class="tab" role="tab" aria-selected="true" data-r="body">Body</button>
+          <button class="tab" role="tab" aria-selected="false" data-r="headers">Headers<span class="n"
+              id="n-rh">0</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-r="preview">Preview</button>
+          <button class="tab" role="tab" aria-selected="false" data-r="history">History</button>
+        </div>
+        <div class="panel on" id="r-body">
+          <pre class="out" id="rBody"></pre>
+          <div class="tools"><button class="ghost" id="copy">Copy</button><button class="ghost"
+              id="dl">Download</button><button class="ghost" id="wrap">Toggle wrap</button></div>
+        </div>
+        <div class="panel" id="r-headers">
+          <table class="hdr-table" id="rHeaders"></table>
+        </div>
+        <div class="panel" id="r-preview"><iframe class="preview" id="rPrev" sandbox title="Response preview"></iframe>
+        </div>
+        <div class="panel" id="r-history">
+          <div class="hist" id="hist"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
